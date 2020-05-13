@@ -1,4 +1,4 @@
 module.exports = {
-    database: 'mongodb://localhost:27017/profile',
+    database: 'mongodb+srv://manblog:manblog@tigerweb-opbe5.mongodb.net/test?retryWrites=true&w=majority',
     secret: 'your_key'
 }
