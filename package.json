@@ -4,7 +4,10 @@
   "description": "personal profile website",
   "main": "server.js",
   "scripts": {
-    "start": "node server"
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "12.13.1"
   },
   "repository": {
     "type": "git",
