@@ -3,9 +3,8 @@ const config = require('./config/database');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
-// Routes
+// All Routes
 const api = require('./routes/api')
-
 // Connect to database
 mongoose.connect( process.env.MONGODB_URI || config.database, {
     useCreateIndex: true,
