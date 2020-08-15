@@ -12,6 +12,7 @@ const Clients = require('../models/clients');
 const Accolades = require('../models/accolades');
 const Proverbs = require('../models/proverbs');
 const Slider = require('../models/slider');
+const Title = require('../models/title');
 
 router.get('/qualities', (req, res) => {
 	Qualities.getPost((err, qualities) => {
@@ -61,6 +62,16 @@ router.get('/skills', (req, res) => {
 		}
 		res.header("Content-Type",'application/json');
     	res.send(JSON.stringify(skills, null, 3));
+	});
+});
+
+router.get('/title', (req, res) => {
+	Title.getPost((err, skills) => {
+		if(err){
+			throw err;
+		}
+		res.header("Content-Type",'application/json');
+    	res.send(JSON.stringify(Title, null, 3));
 	});
 });
 
