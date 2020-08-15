@@ -66,12 +66,12 @@ router.get('/skills', (req, res) => {
 });
 
 router.get('/title', (req, res) => {
-	Title.getPost((err, skills) => {
+	Title.getPost((err, title) => {
 		if(err){
 			throw err;
 		}
 		res.header("Content-Type",'application/json');
-    	res.send(JSON.stringify(Title, null, 3));
+    	res.send(JSON.stringify(title, null, 3));
 	});
 });
 
