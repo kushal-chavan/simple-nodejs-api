@@ -10,7 +10,7 @@ mongoose.connect( process.env.MONGODB_URI || config.database, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
-  });
+});
 
 // On Connect
 mongoose.connection.on('connected', () => {
