@@ -6,7 +6,7 @@ const app = express();
 // All Routes
 const api = require('./routes/api')
 // Connect to database
-mongoose.connect( process.env.MONGODB_URI || config.database, {
+mongoose.connect( config.database, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
