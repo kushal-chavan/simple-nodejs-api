@@ -1,13 +1,13 @@
 {
   "name": "rakeshchouhan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "personal profile website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "engines": {
-    "node": "12.13.1"
+    "node": "16.15.0"
   },
   "repository": {
     "type": "git",
